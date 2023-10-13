@@ -2,6 +2,7 @@
 ## Project 1/3 of "Käyttöjärjestelmät ja systeemiohjelmointi" practical assignment
 
 To use the program, use commands below:
+
 $ ./reverse - _here_
 
 $ ./reverse input.txt - _this command reverses the contents of the textfile and outputs to shell_
