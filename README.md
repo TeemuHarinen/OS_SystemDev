@@ -1,2 +1,2 @@
-# kayttojarjestelmat_ja_systeemiohjelmointi
-Käyttöjärjestelmät ja systeemiohjelmointi -kurssin projektit
+# Käyttöjärjestelmät ja systeemiohjelmointi -kurssin projektit
+
