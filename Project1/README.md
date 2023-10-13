@@ -1,1 +1,2 @@
-# Program to reverse contents in a file and output to another
+# Project 1 - Warmup to C and Unix programming
+
