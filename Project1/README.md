@@ -3,7 +3,7 @@
 
 To use the program, use commands below:
 
-$ ./reverse - _not yet implemented!_
+$ ./reverse - _when called without arguments: terminal inputs are reversed to STDOUT after typing "END"_
 
 $ ./reverse input.txt - _this command reverses the contents of the textfile and outputs to shell_
 
