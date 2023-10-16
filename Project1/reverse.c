@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define MAX 128
 
 // Function to reverse input file contents and output to a file
 void reverse(FILE *input, FILE *output) {
@@ -63,7 +64,46 @@ int main(int argc, char *argv[]) {
                 exit(1);
             }
         }
-    }
+    } else if (argc >= 1) {
+        // Taking user input (STDIN) and reversing it to terminal (STDOUT)
+	
+	    char *line = NULL;
+		size_t len;
+		char array[MAX][MAX];
+		int a;
+		int b;
+		int count = 0;
+		
+		fprintf(stdout, "Give inputs, type 'END' to end THE program and reverse the input: \n\n");
+        while(getline(&line, &len, stdin) != -1)
+		{
+			if (strcmp(line, "\n") == 0) // terminate program if empty line is entered			
+			{
+				fprintf(stdout, "error: input needs to be words, empty lines terminate program\n\n");
+				exit(1);
+			}
+			
+			if (strcmp(line, "END\n") == 0)		// exit the loop if 'END' is typed
+			{
+				break;
+			}
+			
+			strcpy(array[a], line);	
+			count++;					
+			a++;
+		}
+		free(line);
+		fprintf(stdout, "\n");
+		fprintf(stdout, "Inputs in reverse order: \n\n");
+		
+        // Reverse the input array
+		for (b = count-1; b >= 0; b--)
+		{
+			fprintf(stdout, "%s", array[b]);
+		}
+		fprintf(stdout, "\n");
+
+		return 0;
     
     reverse(input, output);
 
@@ -76,4 +116,5 @@ int main(int argc, char *argv[]) {
     }
 
     return 0;
+}
 }
