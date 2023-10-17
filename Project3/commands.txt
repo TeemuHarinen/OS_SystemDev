@@ -4,3 +4,5 @@ mkdir example
 ls
 rmdir example
 ls
+cd ..
+ls
