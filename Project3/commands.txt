@@ -1,0 +1,6 @@
+rmdir example
+ls
+mkdir example
+ls
+rmdir example
+ls
