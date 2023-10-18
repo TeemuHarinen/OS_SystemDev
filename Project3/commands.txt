@@ -6,3 +6,4 @@ rmdir example
 ls
 cd ..
 ls
+randomäääscommand
