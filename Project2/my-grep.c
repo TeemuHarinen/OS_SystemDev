@@ -17,6 +17,24 @@ void findTerm(FILE *file, const char *searchTerm) {
 
   free(line);
 }
+
+void findTermInteractive(FILE *file, const char *searchTerm) {
+  char *line = NULL;
+  size_t length = 0;
+  int r;
+
+  while ((r = getline(&line, &length, file)) != -1) {
+    if (strstr(line, searchTerm) != NULL) { // compare search term to line with function strstr()
+      printf("%s", line);
+    }
+
+    if (strcmp(line, "END\n") == 0) { // break the loop if END is used as input
+      break;
+  }
+}
+  free(line);
+}
+
 int main(int argc, char* argv[])
 {
 	const char *searchTerm = argv[1];
@@ -28,7 +46,7 @@ int main(int argc, char* argv[])
 	}
 
   if (argc == 2) {
-    findTerm(stdin, searchTerm);
+    findTermInteractive(stdin, searchTerm);
     exit(0);
   }
 

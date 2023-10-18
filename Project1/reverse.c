@@ -103,10 +103,6 @@ int main(int argc, char *argv[]) {
 		}
 		fprintf(stdout, "\n");
 
-		return 0;
-    
-    reverse(input, output);
-
     // Close files if not stdin or stdout
     if (input != stdin) {
         fclose(input);
@@ -117,4 +113,6 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+    reverse(input, output);
+    return 0;
 }
