@@ -6,6 +6,7 @@ To use the program, use commands below:
 ### my-cat
 
 $ ./my-cat [file] - reads the file and outputs to console
+
 $ ./my-cat [inputfile] [outputfile] - reads the inputfile and writes contents to outputfile
 
 ### my-grep
