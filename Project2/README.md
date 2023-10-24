@@ -13,7 +13,7 @@ $ ./my-cat [inputfile] [outputfile] - reads the inputfile and writes contents to
 
 $ ./my-grep examplestring [file1] [file2] [file...] - finds given string from file(s)
 
-### My-zip
+### my-zip
 
 $ ./my-zip file1 [file2] ... - my-zip compresses the file using repeating characters. Example of the compression: "aaaabb" --> "4a2b" 
 
