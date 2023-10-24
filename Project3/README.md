@@ -8,3 +8,7 @@ $ ./wish - starts the shell in interactive mode
 
 Running a command in wish is the exact same process as any other shell. 
 for example type 'ls' and press enter to view files in the current folder.
+
+(Type 'END' and press enter to exit program)
+
+$ ./wish commands.txt - executes commands one by one from given txt file. 
